@@ -111,14 +111,6 @@ const portfolio = [
             title: '개인작',
             tag: 'illa',
             tagname: '일러스트',
-            date: '23.05.08',
-            img: 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FmwpZK%2Fbtsybu20U6p%2FIAhth7vF9ezDSLm4bZakj1%2Fimg.png',
-            alt: '작업물'
-        },
-        {
-            title: '개인작',
-            tag: 'illa',
-            tagname: '일러스트',
             date: '23.05.03',
             img: 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdsKt6f%2FbtsykrX7MIu%2FIWBiee6plN82Qd2HbTBE70%2Fimg.png',
             alt: '작업물'

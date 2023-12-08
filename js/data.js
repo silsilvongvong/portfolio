@@ -27,6 +27,15 @@ const portfolio = [
             title: '개인작',
             tag: 'illa',
             tagname: '일러스트',
+            date: '23.11.27',
+            img: 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcQAlRP%2FbtsBC5SO2oB%2F8ALphCKm41q4CxK9rnVQSk%2Fimg.png',
+            alt: '작업물'
+        },
+        {
+            current:'최신',
+            title: '개인작',
+            tag: 'illa',
+            tagname: '일러스트',
             date: '23.10.10',
             img: 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FtDGxA%2FbtsyeqkVa1m%2F6iipkB06oJTfwV5aErn250%2Fimg.png',
             alt: '작업물'
@@ -144,14 +153,6 @@ const portfolio = [
             tagname: '팬아트',
             date: '23.03.14',
             img: 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcMd1J9%2FbtsycuIeOeH%2FmYIk83DRKNPauQwdlkKRek%2Fimg.png',
-            alt: '작업물'
-        },
-        {
-            title: '개인작',
-            tag: 'illa',
-            tagname: '일러스트',
-            date: '23.03.09',
-            img: 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F0Y4oh%2FbtsycWLtGdZ%2F7MO6Fz1Ws0LHYJkOJBK970%2Fimg.png',
             alt: '작업물'
         },
         {

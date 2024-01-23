@@ -3,7 +3,7 @@ const banner = {
     bannerImg: 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FtDGxA%2FbtsyeqkVa1m%2F6iipkB06oJTfwV5aErn250%2Fimg.png',
     bannerTitle: 'SILSILVONGVONG',
     bannerDesc: '안녕하세요 일러스트를 그리고 있는 실실벙글입니다. <br/> 모든 비지니스 문의는 메일 또는 사이트 하단의 접수폼을 이용해주세요! ',
-    bannerLinkTxt: '2023일정보기',
+    bannerLinkTxt: '2024일정보기',
     bannerLink: '#schedule' //페이지 내의 링크: #gallery, #schedule, #contact
 }
 
@@ -132,27 +132,11 @@ const portfolio = [
             alt: '작업물'
         },
         {
-            title: '개인의뢰 작업물',
-            tag: 'illa',
-            tagname: '일러스트',
-            date: '23.04.01',
-            img: 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fbuffah%2Fbtsybx6w2Jv%2F8kdCQzrxDhf1YQ2WL2GTRk%2Fimg.png',
-            alt: '작업물'
-        },
-        {
             title: '패션 일레이',
             tag: 'fanart',
             tagname: '팬아트',
             date: '23.03.14',
             img: 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcMd1J9%2FbtsycuIeOeH%2FmYIk83DRKNPauQwdlkKRek%2Fimg.png',
-            alt: '작업물'
-        },
-        {
-            title: '개인작',
-            tag: 'illa',
-            tagname: '일러스트',
-            date: '23.02.28',
-            img: 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FerZPt5%2FbtsydT8PXTI%2FiIUbr69pNimOk5czvqIcdk%2Fimg.png',
             alt: '작업물'
         },
         {
@@ -166,31 +150,31 @@ const portfolio = [
     ];
 
 const schedule = {
-    year: 2023,
+    year: 2024,
     firstHalf : [
                     '마감', //1월
-                    '마감', //2월
-                    '마감', //3월
-                    '마감', //4월
-                    '마감', //5월
-                    '마감' //6월
+                    '모집중', //2월
+                    '모집중', //3월
+                    '모집중', //4월
+                    '모집중', //5월
+                    '모집중' //6월
                 ],
     secondHalf : [
-                    '마감', //7월
+                    '모집중', //7월
                     '모집중', //8월
                     '모집중', //9월
                     '모집중', //10월
                     '모집중', //11월
                     '모집중' //12월
                 ],
-    desc: '2024년도 예약문의는 받지 않습니다.<br>특수 슬롯(긴급건 등) 문의는 따로 부탁드립니다.<br>비상업용 개인 의뢰는 커미션으로 진행하고 있습니다. 커미션 오픈 여부는 커미션 페이지에서 확인하실 수 있습니다.'
+    desc: '2025년도 예약문의는 받지 않습니다.<br>특수 슬롯(긴급건 등) 문의는 따로 부탁드립니다.<br>비상업용 개인 의뢰는 커미션으로 진행하고 있습니다. 커미션 오픈 여부는 커미션 페이지에서 확인하실 수 있습니다.'
 }
 
 const profile = {
     name: '실실벙글', //작가명
     hompageTit: 'portfolio homepage',
     subdesc: '프리랜서 일러스트레이터', //상태 텍스트
-    info:'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    info:'안녕하세요. 일러스작업을 하고 있는 실실벙글이라고 합니다. 주로 웹소설 표지 일러스트, 삽화 일러스트 작업을 진행하고 있습니다.',
     mainImg:'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FtDGxA%2FbtsyeqkVa1m%2F6iipkB06oJTfwV5aErn250%2Fimg.png',//메인 이미지
     image: 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FtDGxA%2FbtsyeqkVa1m%2F6iipkB06oJTfwV5aErn250%2Fimg.png', // 프로필 이미지
     email: 'silsilvongvong@naver.com',

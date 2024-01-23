@@ -34,7 +34,7 @@
     </div>
     <script src="./js/load.js"></script>
     <div class="wrap">
-        <header class="header">
+        <!-- <header class="header">
             <div class="gnb" uk-sticky="start: 100%">
                 <nav class="uk-navbar-container uk-navbar-transparent">
                     <div class="uk-container">
@@ -42,12 +42,12 @@
                             <div class="uk-navbar-left">
                                 <a class="logo_item uk-navbar-item uk-logo" href="#" aria-label="Back to Home">Logo</a>
                                 <ul class="uk-navbar-nav">
-                                    <!-- <li>
+                                    <li>
                                         <a href="#schedule">
                                             <span class="uk-margin-small-right"></span>
                                             Schedule
                                         </a>
-                                    </li> -->
+                                    </li>
                                     <li>
                                         <a href="#gallery">
                                             <span class="uk-margin-small-right"></span>
@@ -63,20 +63,6 @@
                                 </ul>
                             </div>
                             <div class="uk-navbar-right">
-                                <ul class="uk-navbar-nav">
-                                    <li>
-                                        <label for="darkmode" class="blind">화면 모드 변경</label>
-                                        <div class="button-cover">
-                                            <div class="button r" id="themes_btn">
-                                            <input class="checkbox" type="checkbox" name="themes" id="darkmode" onchange="typeCheck('dark-theme')">
-                                            <div class="knobs">
-                                                <span></span>
-                                            </div>
-                                            <div class="layer"></div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
                             </div>
 
                         </div>
@@ -84,18 +70,38 @@
                 </nav>
                 <div class="pageProgressBar"></div>
             </div>
-        </header>
+        </header> -->
         <main class="main">
-            <section class="section main_visual">
-                <div class="round">
-                </div>
-                <div class="mouse-icon"><div class="wheel"></div></div>
-            </section>
-            <!-- <section class="section content" id="info">
+            <ul class="uk-navbar-nav">
+                <li>
+                    <label for="darkmode" class="blind">화면 모드 변경</label>
+                    <div class="button-cover">
+                        <div class="button r" id="themes_btn">
+                        <input class="checkbox" type="checkbox" name="themes" id="darkmode" onchange="typeCheck('dark-theme')">
+                        <div class="knobs">
+                            <span></span>
+                        </div>
+                        <div class="layer"></div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <section class="section content" id="info">
                 <div class="profile_box">
                     <div class="uk-card-header">
                     </div>
                     <div class="uk-card-body">
+                    </div>
+                </div>
+            </section>
+            <section class="section content" id="gallery">
+                <!-- <h3 class="section_title">Gallery</h3> -->
+                <div  uk-filter="target: .js-filter">
+                    <ul class="categoryBox uk-subnav uk-subnav-pill">
+                    </ul>
+                    <div uk-lightbox="animation: slide">
+                        <ul class="grid galleryBox js-filter grid-container">
+                        </ul>
                     </div>
                 </div>
             </section>
@@ -112,18 +118,8 @@
                         <p class="txt_box round scheduleDesc"></p>
                     </div>
                 </div>
-            </section> -->
-            <section class="section content" id="gallery">
-                <h3 class="section_title">Gallery</h3>
-                <div  uk-filter="target: .js-filter">
-                    <ul class="categoryBox uk-subnav uk-subnav-pill">
-                    </ul>
-                    <div uk-lightbox="animation: slide">
-                        <ul class="grid galleryBox js-filter grid-container">
-                        </ul>
-                    </div>
-                </div>
             </section>
+            <hr>
             <div id="contact">
                 <div>
                     <section class="section content">
@@ -137,6 +133,7 @@
                                             <p class="round email_desc mt0"></p>
                                         </dd>
                                     </dl>
+                                    <hr>
                                     <dl>
                                         <dt class="uk-card-title fw800">SNS</dt>
                                         <dd>
@@ -178,7 +175,7 @@
                                                 <input id="deadline" name="deadline" class="uk-input" type="date" placeholder="발주처" aria-label="Input" required="required">
                                             </div>
                                             <div style="flex-grow: 1;">
-                                                <label for="pay">희망 단가</label>
+                                                <label for="pay">발주 예산</label>
                                                 <input id="pay" name="pay" class="uk-input" type="text" placeholder="발주 예산"aria-label="Input" required="required">
                                             </div>
                                         </div>
@@ -211,47 +208,18 @@
     </div>
 
 
-    <script>
-        var html = document.querySelector('html');
+<script>
+    var html = document.querySelector('html');
 
-        function typeCheck(type){
+    function typeCheck(type){
 
-            if(html.classList.length > 0){html.classList.remove(type);
-                }else if(html.classList.length === 0){html.classList.add(type);
-            };
-        }
-
-    // 스크롤 프로그래스바
-    window.addEventListener('scroll', () => {
-            let currentY = document.documentElement.scrollTop //스크롤한 높이
-            let totalY =
-                document.documentElement.scrollHeight
-                - document.documentElement.clientHeight // 전체높이
-            let percentage = (currentY / totalY) * 100 //퍼센트값
-            document.querySelector('.pageProgressBar').style.width = `calc( 100% - ${percentage}% )` //프로그래스 바 너비번경
-        });
-    // 로고 이름 변경
-    document.querySelector('.logo_item').innerHTML = `${banner.logoName}`;
-    //메인 배너 부분 데이터 박아너기
-        let bannerList = [];
-            bannerList.push(`
-            <div class="uk-section uk-light uk-background-cover" style="background-image:url(${banner.bannerImg}); padding:0;">
-                <div class="banner">
-                    <div class="banner_con_box">
-                        <div>
-                            <h2 class="banner_title">${banner.bannerTitle}</h2>
-                            <p>${banner.bannerDesc}</p>
-                        </div>
-                    </div>
-                    <div class="shape">
-                        <svg viewBox="0 0 1500 200">
-                            <path d="m 0,240 h 1500.4828 v -71.92164 c 0,0 -286.2763,-81.79324 -743.19024,-81.79324 C 300.37862,86.28512 0,168.07836 0,168.07836 Z"></path>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-            `)
-        document.querySelector('.section.main_visual > div').innerHTML = bannerList.join('');
+        if(html.classList.length > 0){html.classList.remove(type);
+            }else if(html.classList.length === 0){html.classList.add(type);
+        };
+    }
+//form 배경화면
+document.querySelector('.wrap').style.background = `url(${banner.bannerImg}) no-repeat center top fixed`;
+document.querySelector('.wrap').style.backgroundSize = `cover`;
 
 //카테고리 편집
 let categoryList = [`<li class="uk-active round" uk-filter-control><a href="#">All</a></li>`];
@@ -264,44 +232,30 @@ let categoryList = [`<li class="uk-active round" uk-filter-control><a href="#">A
 
 //갤러리 부분 데이터 박아넣기
 let currentCounter
-        let totalCounter = portfolio.length
-        let portfolioList = [];
-        portfolio.forEach((content,idx) => {
-                portfolioList.push(`
-                <li class="grid-item" data-tag="${content.tag}">
-                    <div class="grid-item-box">
-                        <img src="${content.img}" alt="${content.alt}">
-                        <a href="${content.img}">
-                            <dl class="tal uk-description-list uk-description-list-divider">
-                                <dd class="em_block">
-                                    <span class="uk-label">${content.tagname}</span><span class="fr edit_date">${content.date}</span>
-                                </dd>
-                                <dt><strong class="pro-title">${content.title}</strong></dt>
-                            </dl>
-                        </a>
-                    </div>
-                </li>
-                `)
-                document.querySelector('.galleryBox').innerHTML = portfolioList.join('');
-            });
+let totalCounter = portfolio.length
+let portfolioList = [];
+portfolio.forEach((content,idx) => {
+        portfolioList.push(`
+        <li class="grid-item" data-tag="${content.tag}">
+            <div class="grid-item-box">
+                <img src="${content.img}" alt="${content.alt}">
+                <a href="${content.img}">
+                    <dl class="tal uk-description-list uk-description-list-divider">
+                        <dd class="em_block">
+                            <span class="uk-label">${content.tagname}</span><span class="fr edit_date">${content.date}</span>
+                        </dd>
+                        <dt><strong class="pro-title">${content.title}</strong></dt>
+                    </dl>
+                </a>
+            </div>
+        </li>
+        `)
+        document.querySelector('.galleryBox').innerHTML = portfolioList.join('');
+    });
 
-    //갤러리 masonry 레이아웃 잡기
-    function resizeGridItems(){
-    const items = document.querySelectorAll('.grid-item')
-    items.forEach((item,idx) => {
-            const grid = document.querySelector('.grid-container')
-            const rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'))
-            const rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap'))
-            const rowSpan =  Math.floor((item.querySelector('.grid-item-box').offsetHeight+rowGap)/(rowHeight+rowGap))
-            item.style.gridRowEnd = "span "+ rowSpan;
-    })
-};
-
-window.addEventListener('load',resizeGridItems);
-window.addEventListener('resize',resizeGridItems);
 
     //스케쥴 부분 데이터 박아넣기
-        /* document.querySelector('.scheduleYear').innerHTML = schedule.year;
+        document.querySelector('.scheduleYear').innerHTML = schedule.year;
         document.querySelector('.scheduleDesc').innerHTML = schedule.desc;
         let scheduleFirstBox = document.querySelector('.scheduleBox01');
         let scheduleSecondBox = document.querySelector('.scheduleBox02');
@@ -330,10 +284,10 @@ window.addEventListener('resize',resizeGridItems);
             </div>
             `)
             scheduleSecondBox.innerHTML = scheduleSecondList.join('');
-        }); */
+        });
 
     //스케쥴 뱃지 스타일 주기
-       /*  let schedule_badge = document.querySelectorAll('.schedule_check');
+        let schedule_badge = document.querySelectorAll('.schedule_check');
         let badge_arr = [];
         schedule_badge.forEach((badge_txt) => {
             badge_arr.push(badge_txt.innerText);
@@ -349,10 +303,10 @@ window.addEventListener('resize',resizeGridItems);
                         schedule_badge[index].style.background = 'linear-gradient(to right, #61b9f3, #a161f3)';
                     break;
             }
-        }); */
+        });
 
     //작가 프로필
-       /*  let profileHeaderBox = document.querySelector('.profile_box .uk-card-header');
+        let profileHeaderBox = document.querySelector('.profile_box .uk-card-header');
         let profileBodyBox = document.querySelector('.profile_box .uk-card-body');
         let profileHeaderBoxList= [];
         let profileBodyBoxList= [];
@@ -370,21 +324,10 @@ window.addEventListener('resize',resizeGridItems);
                     <div>${profile.info}</div>
                 </div>
             </div>
-            <hr>
-            <div class="carrer"></div>
             `)
         profileBodyBox.innerHTML = profileBodyBoxList.join('');
 
-        let profileCarrerBox = document.querySelector('.profile_box .uk-card-body .carrer');
-        let profileCarrerBoxList = [];
-        profile.carrer.forEach((profile,idx) => {
-            profileCarrerBoxList.push(`
-            <p><span class="uk-text-meta">${profile.date}</span><br/>${profile.title}</p>
-            `)
-            profileCarrerBox.innerHTML = profileCarrerBoxList.join('');
-        }); */
-
-    //sns 부분 데이터 박아넣기
+    //스케쥴 부분 데이터 박아넣기
         let snsBox = document.querySelector('.sns_box');
         let snsBoxtList= [];
 
@@ -395,9 +338,6 @@ window.addEventListener('resize',resizeGridItems);
             snsBox.innerHTML = snsBoxtList.join('');
         });
 
-    //form 배경화면
-        document.querySelector('#contact').style.background = `url(${banner.bannerImg}) no-repeat center top fixed`;
-        document.querySelector('#contact').style.backgroundSize = `cover`;
     //푸터 카피라이트
         document.querySelector('.copyright').innerHTML = `© ${schedule.year}, Created By ${profile.name}. All rights reserved`;
 

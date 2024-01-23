@@ -18,7 +18,7 @@ html,body{
     --c-bg-primary: 255, 255, 255;
     --c-opacity: 0.8;
     --c-font: -apple-system,BlinkMacSystemFont,"Pretendard","Segoe UI",'Noto Sans KR',Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    --c-filter: brightness(0.5);
+    --c-filter: brightness(0.7);
 }
 
 :root.dark-theme {
@@ -29,7 +29,7 @@ html,body{
     --c-text-secondary: #c9c9c9;
     --c-border-primary: #929292;
     --c-bg-primary: 18, 18, 18;
-    --c-filter: contrast(45%) brightness(1.5);
+    --c-filter: brightness(0.3);
 }
 ul,li{
     list-style: none;
@@ -110,10 +110,30 @@ ul,li{
 .fw400{font-weight: 400 !important;}
 
 .wrap{
-    background: var(--c-bg-body);
+    position: relative;
     color: var(--c-text-primary);
     overflow: hidden;
     font-family: var(--c-font) !important;
+    padding: 10vh 0;
+}
+.wrap::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top:0; left: 0;
+    width: 100%; height: 100%;
+    background-image: var(--c-point02-color);
+    opacity: 0.2;
+    z-index: 2;
+}
+.wrap::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top:0; left: 0;
+    width: 100%; height: 100%;
+    backdrop-filter: blur(8px) var(--c-filter);
+    z-index: 5;
 }
 
 .flex-box{
@@ -248,7 +268,7 @@ h3.section_title{
     padding-top: 20px;
     font-size: 1.1em;
     text-align: center;
-    letter-spacing: 0;
+    letter-spacing: -0.05em;
     opacity: 0.7;
     color: var(--c-bg-body)!important;
 }
@@ -283,7 +303,11 @@ form .uk-button:hover,
 .main{
     position: relative;
     width: 100%;
+    max-width: 880px;
     margin: 0 auto;
+    background: var(--c-bg-body);
+    z-index: 10;
+    box-shadow: 1px 6px 62px -22px var(--c-text-primary);
 }
 
 .section.content{
@@ -296,11 +320,11 @@ form .uk-button:hover,
 }
 
 #info{
-    padding-top: 50px;
+    padding: 50px 55px;
 }
 
 #gallery{
-    padding-bottom: 120px;
+    padding:0 0 30px;
 }
 
 @media (min-width: 576px) {
@@ -374,7 +398,10 @@ form .uk-button:hover,
 
 .galleryBox li img{
     width: 100%;
+    height:100%;
     transition: all ease 0.2s;
+    object-fit: cover;
+    object-position:top center;
 }
 .grid-container{
     position: relative;
@@ -382,8 +409,9 @@ form .uk-button:hover,
     max-width: 100rem;
     margin: 0 auto;
     gap:15px;
-    grid-template-columns: repeat(auto-fit,minmax(18rem,1fr));
-    grid-auto-rows: 0.5rem;
+    grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+    grid-auto-rows: 15rem;
+    grid-gap: 0;
     padding-left: 0;
 }
 .grid-container li.grid-item{
@@ -393,6 +421,7 @@ form .uk-button:hover,
 .grid-container .grid-item-box{
     display: block;
     position: relative;
+    width: 100%; height: 100%;
     overflow: hidden;
     padding:0;
     cursor: pointer;
@@ -426,9 +455,24 @@ form .uk-button:hover,
 .pro-title{
     font-size: 1.3em;
 }
-
+#schedule {
+    padding: 80px 40px 30px;
+}
 #schedule h4{
     text-align: center;
+}
+
+#schedule hr{
+    width: 100% !important;
+}
+.scheduleBox01 ,
+.scheduleBox02{
+    padding: 0 25px;
+}
+
+.scheduleBox01 > div,
+.scheduleBox02 > div{
+    padding-top: 20px;
 }
 
 .scheduleYear{
@@ -486,12 +530,9 @@ form .uk-button:hover,
 
 #contact>div{
     position: relative;
-    backdrop-filter: blur(8px) var(--c-filter);
-    color: var(--c-bg-body);
     padding-top: 80px;
 }
 #contact h3.section_title{
-    color: var(--c-bg-body);
     text-align: left;
 }
 
@@ -512,6 +553,9 @@ form .uk-button:hover,
     width: 55%;
     margin: 0;
     box-sizing: border-box;
+    padding: 15px;
+    border: 1px solid var(--c-border-primary);
+    border-radius: 10px;
 }
 
 .footer{
@@ -528,40 +572,38 @@ form .uk-button:hover,
 }
 
 .footer .copyright{
-    color: var(--c-bg-body);
     font-size: 0.8em;
 }
 
+.sns_box{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 11px;
+}
+
 .sns_box li{
-    margin-top: 11px;
-    border-bottom: 2px solid var(--c-bg-body);
+    width:100px;
+    height:100px;
+    border: 2px solid var(--c-border-primary);
     transition: all ease 0.2s;
+    border-radius: 50%;
 }
 .sns_box li:hover{
     border-color: var(--c-point03-color);
 }
 .sns_box li a{
     position: relative;
-    display: block;
-    padding: 5px 5px;
-    color: var(--c-bg-body);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; height: 100%;
+    color: var(--c-text-primary);
     transition: all ease 0.2s;
 }
 .sns_box li a:hover{
     text-decoration: none;
 }
-.sns_box li a::after{
-    content: "⇒";
-    display: block;
-    position: absolute;
-    top: 0; right: 3px;
-    font-size: 1.2em;
-    font-family: var(--c-font);
-    transition: all ease 0.2s;
-}
-.sns_box li a:hover::after{
-    transform: translateX(5px);
-}
+
 
 .profile_box{
     width: 100%;
@@ -577,16 +619,16 @@ form .uk-button:hover,
 
 .profile_img{
     position: relative;
-    width: 300px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
     padding-left: 0;
-    border-radius: 10px;
+    border-radius: 50%;
     overflow: hidden;
 }
 
 .profile_img img{
     width: 100%;
-    height: 350px;
+    height: 250px;
     object-fit: cover;
     object-position: top center;
     position: relative;
@@ -732,6 +774,14 @@ z-index: 1;
 
 
 /*ui kit 스타일 제어*/
+.wrap hr{
+    width: 90% !important;
+    margin: 0 auto;
+}
+.wrap .uk-navbar-nav{
+    position: absolute;
+    top:20px; right: 20px;
+}
 .wrap .uk-navbar-nav>li>a{
     color: var(--c-bg-body);
 }
@@ -817,11 +867,12 @@ z-index: 1;
 .wrap .uk-input,
 .wrap .uk-select,
 .wrap .uk-textarea{
-    background:transparent;
+    background:var(--c-shadow-color);
     margin-top: 5px;
-    color:var(--c-bg-body);
+    color:var(--c-text-secondary);
     border-width: 0 0 2px 0;
     border-color: var(--c-bg-body);
+    border-radius: 5px;
 }
 .wrap .uk-input:focus,
 .wrap .uk-select:focus,
@@ -829,13 +880,23 @@ z-index: 1;
     border-color: var(--c-point03-color);
 }
 
+#gallery > div{position: relative;}
 .categoryBox.uk-subnav{
+    position: absolute;
+    top:-80px; right:30px;
     justify-content: center;
     border: 2px solid #dee2e6;
     border-radius: 100px;
     padding: 2px;
     margin: 0 auto 20px;
-    max-width: 392px;
+    max-width: 400px;
+}
+.categoryBox.uk-subnav::before{
+    content: "category";
+    text-transform: uppercase;
+    position: absolute;
+    color: var(--c-border-primary);
+    top:-19px; right: 10px;
 }
 
 
@@ -849,7 +910,7 @@ z-index: 1;
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 25vh;
+    bottom: 100px;
     margin: auto;
   }
 
@@ -909,18 +970,30 @@ z-index: 1;
 
 
 /* media */
-@media all and (max-width: 500px){
+@media all and (max-width: 880px){
+    .wrap{padding-top: 0; padding-bottom: 0;}
+    #info{padding-top: 5vh;}
+    #schedule{padding: 80px 30px 30px;}
+    .categoryBox.uk-subnav{
+        position: relative;
+        top:0; right:0;
+        max-width: 350px;
+    }
     .grid-container{
         grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
     }
 }
 @media all and (min-width: 720px){
+    .main{border-radius: 0;}
     .wrap .uk-navbar-center:only-child, .uk-navbar-left, .uk-navbar-right{
         gap: 15px;
     }
     .uk-logo.logo_item, .dark-theme .uk-logo.logo_item{
         padding: 0 10px;
     }
+}
+@media all and (min-width: 880px){
+    .main{border-radius: 15px;}
 }
 @media all and (max-width: 990px){
     .banner{
@@ -934,9 +1007,6 @@ z-index: 1;
     .footer{
         margin-top: 80px;
     }
-    #info{
-        padding-top: 0;
-    }
     .profile_box{
         justify-content: center;
         text-align: center;
@@ -947,7 +1017,7 @@ z-index: 1;
         min-width: 100%;
     }
     .profile_img,.profile_img img{
-        width: 200px;
+        width: 250px;
         height: 250px;
     }
 }
@@ -959,6 +1029,7 @@ z-index: 1;
 
     .wrap .uk-navbar-nav{
         gap: 0;
+        top:10px; right: 40px;
     }
     .wrap .uk-column-divider {
         column-count: 3;
@@ -1029,14 +1100,11 @@ z-index: 1;
         flex-wrap: wrap;
         gap: 5px;
     }
-    .sns_box li{
-        width: calc((100% / 3) - 5px);
-    }
     .flex-box form{
         width: 100%;
         margin-top: 50px;
         padding: 20px;
-        border: 2px solid var(--c-bg-body);
+        border: 2px solid var(--c-border-primary);
     }
     .footer>div{
         justify-content: center;

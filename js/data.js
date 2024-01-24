@@ -24,11 +24,29 @@ const category = [
 const portfolio = [
         {
             current:'최신',
+            title: '개인의뢰 작업물',
+            tag: 'illa',
+            tagname: '일러스트',
+            date: '24.01.12',
+            img: 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FyWiql%2FbtsDQ4YBTEl%2F3bB7GO5hOP9EdotO7Ym9tK%2Fimg.png',
+            alt: '작업물'
+        },
+        {
+            current:'최신',
+            title: '천관사복',
+            tag: 'fanart',
+            tagname: '팬아트',
+            date: '23.12.31',
+            img: 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FIM1Yc%2FbtsDWSPPOZq%2F6hJ2Ou8VVZZAELUEV80kIK%2Fimg.png',
+            alt: '작업물'
+        },
+        {
+            current:'최신',
             title: '개인작',
             tag: 'illa',
             tagname: '일러스트',
             date: '23.11.27',
-            img: 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcQAlRP%2FbtsBC5SO2oB%2F8ALphCKm41q4CxK9rnVQSk%2Fimg.png',
+            img: 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbO7WPU%2FbtsDUNavJQ4%2F4vtXrsSXtpzeQEqPForoI1%2Fimg.png',
             alt: '작업물'
         },
         {
@@ -50,7 +68,6 @@ const portfolio = [
             alt: '작업물'
         },
         {
-            current:'최신',
             title: '캐릭터 스탠딩',
             tag: 'stand',
             tagname: '스탠딩',
@@ -59,7 +76,6 @@ const portfolio = [
             alt: '작업물'
         },
         {
-            current:'최신',
             title: '개인의뢰 작업물',
             tag: 'illa',
             tagname: '일러스트',

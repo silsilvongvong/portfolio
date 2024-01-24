@@ -198,5 +198,13 @@ const profile = {
             title:'트위터',
             url:'https://twitter.com/silsilvongvong',
         },
+        {
+            title:'인스타그램',
+            url:'https://www.instagram.com/silsilvongvong',
+        },
+        {
+            title:'커미션',
+            url:'https://kre.pe/m8kD',
+        },
     ]
 }

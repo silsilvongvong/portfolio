@@ -1,6 +1,6 @@
 const banner = {
     logoName: 'SILSILVONGVONG',
-    bannerImg: 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FtDGxA%2FbtsyeqkVa1m%2F6iipkB06oJTfwV5aErn250%2Fimg.png',
+    bannerImg: 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FyWiql%2FbtsDQ4YBTEl%2F3bB7GO5hOP9EdotO7Ym9tK%2Fimg.png',
     bannerTitle: 'SILSILVONGVONG',
     bannerDesc: '안녕하세요 일러스트를 그리고 있는 실실벙글입니다. <br/> 모든 비지니스 문의는 메일 또는 사이트 하단의 접수폼을 이용해주세요! ',
     bannerLinkTxt: '2024일정보기',

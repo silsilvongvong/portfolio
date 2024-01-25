@@ -190,7 +190,7 @@ const profile = {
     name: '실실벙글', //작가명
     hompageTit: 'portfolio homepage',
     subdesc: '프리랜서 일러스트레이터', //상태 텍스트
-    info:'안녕하세요. 일러스작업을 하고 있는 실실벙글이라고 합니다. 주로 웹소설 표지 일러스트, 삽화 일러스트 작업을 진행하고 있습니다.',
+    info:'안녕하세요. 일러스트 작업을 하고 있는 실실벙글이라고 합니다. 주로 웹소설 표지 일러스트, 삽화 일러스트 작업을 진행하고 있습니다.',
     mainImg:'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FtDGxA%2FbtsyeqkVa1m%2F6iipkB06oJTfwV5aErn250%2Fimg.png',//메인 이미지
     image: 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FtDGxA%2FbtsyeqkVa1m%2F6iipkB06oJTfwV5aErn250%2Fimg.png', // 프로필 이미지
     email: 'silsilvongvong@naver.com',

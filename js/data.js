@@ -24,6 +24,15 @@ const category = [
 const portfolio = [
         {
             current:'최신',
+            title: '개인작',
+            tag: 'illa',
+            tagname: '일러스트',
+            date: '24.01.29',
+            img: 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FboVgeH%2FbtsD9EjgaGQ%2FZERwLLUVThJnhqbuoX3mRk%2Fimg.jpg',
+            alt: '작업물'
+        },
+        {
+            current:'최신',
             title: '개인의뢰 작업물',
             tag: 'illa',
             tagname: '일러스트',
@@ -100,14 +109,6 @@ const portfolio = [
             alt: '작업물'
         },
         {
-            title: '플레이브 노아',
-            tag: 'fanart',
-            tagname: '팬아트',
-            date: '23.07.03',
-            img: 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdBVLUt%2FbtsylZmJUrF%2FStofbtbGExgrianer2kJH0%2Fimg.png',
-            alt: '작업물'
-        },
-        {
             title: '개인작',
             tag: 'illa',
             tagname: '일러스트',
@@ -129,30 +130,6 @@ const portfolio = [
             tagname: '일러스트',
             date: '23.05.03',
             img: 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdsKt6f%2FbtsykrX7MIu%2FIWBiee6plN82Qd2HbTBE70%2Fimg.png',
-            alt: '작업물'
-        },
-        {
-            title: '개인작',
-            tag: 'illa',
-            tagname: '일러스트',
-            date: '23.04.23',
-            img: 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FkCJnm%2FbtsydkrG6I6%2F3N2NPbH2ROKuNdgcFNvgo1%2Fimg.png',
-            alt: '작업물'
-        },
-        {
-            title: '개인의뢰 작업물',
-            tag: 'illa',
-            tagname: '일러스트',
-            date: '23.04.11',
-            img: 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FoI9gN%2FbtsylZG2Ah1%2FqEFnmbQVyYyBwTDziQnYe1%2Fimg.png',
-            alt: '작업물'
-        },
-        {
-            title: '패션 일레이',
-            tag: 'fanart',
-            tagname: '팬아트',
-            date: '23.03.14',
-            img: 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcMd1J9%2FbtsycuIeOeH%2FmYIk83DRKNPauQwdlkKRek%2Fimg.png',
             alt: '작업물'
         },
         {

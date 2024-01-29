@@ -1,6 +1,6 @@
 const banner = {
     logoName: 'SILSILVONGVONG',
-    bannerImg: 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FyWiql%2FbtsDQ4YBTEl%2F3bB7GO5hOP9EdotO7Ym9tK%2Fimg.png',
+    bannerImg: 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FboVgeH%2FbtsD9EjgaGQ%2FZERwLLUVThJnhqbuoX3mRk%2Fimg.jpg',
     bannerTitle: 'SILSILVONGVONG',
     bannerDesc: '안녕하세요 일러스트를 그리고 있는 실실벙글입니다. <br/> 모든 비지니스 문의는 메일 또는 사이트 하단의 접수폼을 이용해주세요! ',
     bannerLinkTxt: '2024일정보기',
@@ -168,8 +168,8 @@ const profile = {
     hompageTit: 'portfolio homepage',
     subdesc: '프리랜서 일러스트레이터', //상태 텍스트
     info:'안녕하세요. 일러스트 작업을 하고 있는 실실벙글이라고 합니다. 주로 웹소설 표지 일러스트, 삽화 일러스트 작업을 진행하고 있습니다.',
-    mainImg:'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FtDGxA%2FbtsyeqkVa1m%2F6iipkB06oJTfwV5aErn250%2Fimg.png',//메인 이미지
-    image: 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FtDGxA%2FbtsyeqkVa1m%2F6iipkB06oJTfwV5aErn250%2Fimg.png', // 프로필 이미지
+    mainImg:'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FboVgeH%2FbtsD9EjgaGQ%2FZERwLLUVThJnhqbuoX3mRk%2Fimg.jpg',//메인 이미지
+    image: 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FboVgeH%2FbtsD9EjgaGQ%2FZERwLLUVThJnhqbuoX3mRk%2Fimg.jpg', // 프로필 이미지
     email: 'silsilvongvong@naver.com',
     emaildesc: '장르, 희망 단가, 마감일을 포함하여 문의 주세요.<br>사이트의 폼을 이용하실 경우 답장 받으실 이메일을 필수로 남겨주셔야 답변이 가능합니다.',
     carrer: [

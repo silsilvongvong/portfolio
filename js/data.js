@@ -28,7 +28,7 @@ const portfolio = [
             tag: 'illa',
             tagname: '일러스트',
             date: '24.03.04',
-            img: 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbTxJn5%2FbtsFAt1HvA5%2FuvgOCPtK3fPQvMvmkVhJy0%2Fimg.png',
+            img: 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbTOmB7%2FbtsFJnmWqo8%2FRN4LtZ51a9rHTNpPa4Gl91%2Fimg.png',
             alt: '작업물'
         },
         {

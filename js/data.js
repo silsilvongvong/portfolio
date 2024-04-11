@@ -27,6 +27,24 @@ const portfolio = [
             title: '개인작',
             tag: 'illa',
             tagname: '일러스트',
+            date: '24.04.08',
+            img: 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdiaeaZ%2FbtsGzgncwYZ%2FAkPaPn14kY4IPj0xGOmdtk%2Fimg.png',
+            alt: '작업물'
+        },
+        {
+            current:'최신',
+            title: '개인작',
+            tag: 'illa',
+            tagname: '일러스트',
+            date: '24.03.29',
+            img: 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdUG3ax%2FbtsGzL1lduM%2FSkkTkzpZwwwqZwNhFKnl1K%2Fimg.jpg',
+            alt: '작업물'
+        },
+        {
+            current:'최신',
+            title: '개인작',
+            tag: 'illa',
+            tagname: '일러스트',
             date: '24.03.04',
             img: 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbTOmB7%2FbtsFJnmWqo8%2FRN4LtZ51a9rHTNpPa4Gl91%2Fimg.png',
             alt: '작업물'
@@ -68,7 +86,6 @@ const portfolio = [
             alt: '작업물'
         },
         {
-            current:'최신',
             title: '개인작',
             tag: 'illa',
             tagname: '일러스트',
@@ -77,7 +94,6 @@ const portfolio = [
             alt: '작업물'
         },
         {
-            current:'최신',
             title: '개인작',
             tag: 'illa',
             tagname: '일러스트',
@@ -86,7 +102,6 @@ const portfolio = [
             alt: '작업물'
         },
         {
-            current:'최신',
             title: '개인의뢰 작업물',
             tag: 'illa',
             tagname: '일러스트',
